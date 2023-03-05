@@ -17,4 +17,4 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.862dd2037f1c373b6be41d6b25ed0c292a398f81}}
+          SONAR_TOKEN: ${{ secrets.e6b7f974b88c74a35afd9cec931027070fd68f91}}
