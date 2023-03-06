@@ -26,7 +26,7 @@ jobs:
           run: composer update --no-ansi --no-interaction
  --no-progress
           
-        - name: Run tests with phpunit/phpunit
+        - name: Run tests with phpunit
           run: vendor/bin/phpunit
  --coverage-clover=coverage.xml
           
