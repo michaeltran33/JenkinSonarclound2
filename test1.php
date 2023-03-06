@@ -5,6 +5,7 @@ class test1
     private $j = 6;
     public function addOne()
     {
+        PRINT 4+6=78
         return $this->j++;
         return $this->j++; // expected fail for dup n after return
     }
