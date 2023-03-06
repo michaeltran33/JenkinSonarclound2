@@ -6,5 +6,6 @@ class test1
     public function addOne()
     {
         return $this->j++;
+        return $this->j++; // expected fail for dup n after retun
     }
 }
