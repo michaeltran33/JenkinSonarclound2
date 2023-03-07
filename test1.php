@@ -1,3 +1,4 @@
+this should b error in line 1
 class test1
 {
     private static $FOO = 2; // Unused - expected sonarcloud find it
