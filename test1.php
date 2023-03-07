@@ -1,6 +1,7 @@
-this should b error in line 1
+
 class test1
 {
+this should b error in line 1
     private static $FOO = 2; // Unused - expected sonarcloud find it
     private $i = 8; // Unused
     private $j = 6;
