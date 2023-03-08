@@ -18,7 +18,6 @@ jobs:
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
-      - jenkins:
-         name: jenkins
+      - name: jenkins
          run: curl --request GET --url "https://ci:Jenkinsci2023@test.jenkins.zink.com.au/job/github/build?token=github"
          
