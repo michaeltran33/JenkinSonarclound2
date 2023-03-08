@@ -20,4 +20,4 @@ jobs:
            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
       - name: jenkins
         run: curl --request GET --url 'https://ci:Jenkinsci2023@test.jenkins.zink.com.au/job/github/build?token=github'
-        run: echo 'call curl, not the right way, install webhook in jK, need restart'
+        #run: echo 'call curl, not the right way, install webhook in jK, need restart'
