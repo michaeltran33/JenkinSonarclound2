@@ -19,5 +19,5 @@ jobs:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
       - name: jenkins
-        run: curl --request GET --url 'https://ci:Jenkinsci2023@test.jenkins.zink.com.au/job/github/build?token=github'
-         
+       # run: curl --request GET --url 'https://ci:Jenkinsci2023@test.jenkins.zink.com.au/job/github/build?token=github'
+        echo "call curl, not the right way, install webhook in jK, need restart" 
