@@ -10,7 +10,7 @@ jobs:
     name: SonarJenkins
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v300
         with:
           fetch-depth: 1  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarCloud Scan
@@ -20,4 +20,4 @@ jobs:
            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
       - name: jenkins
         run: curl --request GET --url 'https://ci:Jenkinsci2023@test.jenkins.zink.com.au/job/github/build?token=github'
-        #/run: echo 'call curl, not the right way, install webhook in jK, need restart'
+        #run: echo 'call curl, not the right way, install webhook in jK, need restart'
